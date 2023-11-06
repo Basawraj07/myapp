@@ -1,17 +1,15 @@
-import React from 'react'
-
-    const name = 'basu'
-    const loc = 'Goa'
-    const currDate = new Date().toLocaleDateString();
-    const currTime = new Date().toLocaleTimeString();
-function Calender(){
-    return <>
+import React, { Fragment } from 'react'
+import Message from './Message/Message'
+const App = () => {
+  return (
+    <Fragment>
+      <h1>App component</h1>
+      <hr/>
+      <Message/>
+     
     
-    <h1 className='.header'>HELLO</h1>
-    <h2>My Name Is {name}</h2>
-    <h2>I Am From {loc}</h2>
-    <h3>Current Date Is:{currDate}</h3>
-    <h3>Current Date Is:{currTime}</h3>
-    </>
+    </Fragment>
+  )
 }
-export default Calender
+
+export default App
