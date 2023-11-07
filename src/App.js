@@ -1,15 +1,15 @@
 import React, { Fragment } from 'react'
-import Message from './Message/Message'
-const App = () => {
-  return (
-    <Fragment>
-      <h1>App component</h1>
-      <hr/>
-      <Message/>
-     
-    
-    </Fragment>
-  )
-}
+import Navbar from './Navbar/Navbar'
+import Product from './product/Products'
+import Product1 from './product/product-singleHandler'
 
+
+const App=()=>{
+  return <Fragment>
+  <Navbar/>
+  <hr/>
+  <Product1/>
+
+  </Fragment>
+}
 export default App
